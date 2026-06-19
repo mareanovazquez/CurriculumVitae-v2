@@ -18,7 +18,7 @@ import { content, type Lang } from "@/lib/i18n";
 import { useActiveSection, useRevealOnScroll } from "@/hooks/use-reveal";
 
 import projectRec from "@/assets/project-rec.jpg";
-import projectRatzkier from "@/assets/project-ratzkier.jpg";
+import projectCuanto from "@/assets/project-cuanto.jpg";
 import projectEpica from "@/assets/project-epica.jpg";
 import projectDanez from "@/assets/project-danez.jpg";
 import projectJardin from "@/assets/project-jardin.jpg";
@@ -51,47 +51,47 @@ const PROJECTS = [
     key: "rec",
     name: "Estudio REC",
     image: projectRec,
-    tags: ["React", "Next.js", "CMS"],
-    href: "#",
+    tags: ["HTML", "CSS", "JavaScript"],
+    href: "https://estudiorec.com.ar",
     desc: {
-      es: "Sitio para productora audiovisual con foco en mostrar el reel y los clientes.",
-      en: "Website for an audiovisual studio focused on showcasing the reel and clients.",
+      es: "Estudio profesional especializado en redacción, edición y corrección de contenidos. Servicios integrales de comunicación y gestión de textos para formatos físicos y digitales.",
+      en: "Professional studio specializing in writing, editing and proofreading. Comprehensive communication and text management services for print and digital formats.",
     },
-    category: { es: "Productora audiovisual", en: "Audiovisual studio" },
+    category: { es: "Redacción y edición", en: "Writing & Editing" },
   },
   {
-    key: "ratzkier",
-    name: "Ratzkier Arquitectura",
-    image: projectRatzkier,
-    tags: ["React", "Tailwind", "Headless CMS"],
-    href: "#",
+    key: "cuanto",
+    name: "¿Cuánto cada uno?",
+    image: projectCuanto,
+    tags: ["React", "Firebase", "PWA"],
+    href: "https://cuanto-cada-uno.web.app/",
     desc: {
-      es: "Portfolio minimalista para estudio de arquitectura, con galería de obras.",
-      en: "Minimalist portfolio for an architecture studio with a curated project gallery.",
+      es: "App gratuita para dividir gastos en grupo, ideal para salidas a restaurantes y viajes. Sin registro, simple y directa.",
+      en: "Free app for splitting group expenses — perfect for restaurant outings and trips. No sign-up required, simple and straightforward.",
     },
-    category: { es: "Estudio de arquitectura", en: "Architecture studio" },
+    category: { es: "Herramienta web", en: "Web tool" },
   },
   {
     key: "epica",
     name: "Épica Servicios Turísticos",
     image: projectEpica,
-    tags: ["Next.js", "i18n", "SEO"],
-    href: "#",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Tiendanube"],
+    href: "https://epicaserviciosturisticos.com.ar",
     desc: {
-      es: "Plataforma para una agencia de turismo: catálogo de excursiones y formulario de reservas.",
-      en: "Platform for a tourism agency: tour catalog and booking form.",
+      es: "Agencia de viajes en Santa Teresita, Partido de La Costa, con paquetes nacionales e internacionales, excursiones locales y alojamientos.",
+      en: "Travel agency in Santa Teresita, Partido de La Costa, offering domestic and international packages, local excursions and accommodation.",
     },
     category: { es: "Turismo", en: "Travel" },
   },
   {
     key: "danez",
-    name: "DANEZ Centro de Entrenamiento",
+    name: "DANEZ",
     image: projectDanez,
-    tags: ["React", "Animations", "Forms"],
-    href: "#",
+    tags: ["HTML", "CSS", "JavaScript", "React"],
+    href: "https://danez.com.ar",
     desc: {
-      es: "Sitio para gimnasio y centro de entrenamiento con planes, horarios e inscripciones.",
-      en: "Website for a gym and training center with plans, schedule and signup.",
+      es: "Centro de entrenamiento especializado en Pilates reformer, entrenamiento funcional y stretching, ubicado en Villa del Parque.",
+      en: "Specialized training center focused on Reformer Pilates, functional training and stretching, located in Villa del Parque.",
     },
     category: { es: "Fitness", en: "Fitness" },
   },
@@ -99,11 +99,11 @@ const PROJECTS = [
     key: "jardin",
     name: "Jardín Hermano Sol",
     image: projectJardin,
-    tags: ["React", "Tailwind", "A11y"],
-    href: "#",
+    tags: ["HTML", "CSS", "JavaScript", "React"],
+    href: "https://jardinhermanosol.com.ar",
     desc: {
-      es: "Sitio institucional para jardín maternal, cálido y accesible para familias.",
-      en: "Institutional site for a kindergarten — warm and accessible for families.",
+      es: "Jardín de infantes en Villa Santa Rita (CABA) con 40 años de trayectoria, pionero en educación inclusiva y con enfoque ambientalista.",
+      en: "Kindergarten in Villa Santa Rita (CABA) with 40 years of history, pioneering inclusive education with an environmentalist approach.",
     },
     category: { es: "Institucional", en: "Institutional" },
   },
@@ -111,11 +111,11 @@ const PROJECTS = [
     key: "carta",
     name: "Carta Online",
     image: projectCarta,
-    tags: ["SaaS", "React", "QR"],
-    href: "#",
+    tags: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
+    href: "https://cartaonline.com.ar",
     desc: {
-      es: "Carta digital para restaurantes con acceso por QR y edición en tiempo real.",
-      en: "Digital menu for restaurants with QR access and real-time editing.",
+      es: "Plataforma para digitalizar y administrar menús de negocios gastronómicos. Cartas digitales simples que eliminan la necesidad de reimpresiones.",
+      en: "Platform for digitizing and managing menus for food businesses. Simple digital menus that eliminate the need for reprints.",
     },
     category: { es: "Producto SaaS", en: "SaaS product" },
   },
@@ -313,7 +313,7 @@ function About({ t }: { t: (typeof content)["es"] }) {
       </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-1">
-        <StatCard value="4+" label={t.stats.years} />
+        <StatCard value="8+" label={t.stats.years} />
         <StatCard value="20+" label={t.stats.projects} />
         <div className="col-span-2 flex items-center gap-3 rounded-3xl border border-border bg-surface/50 p-5 lg:col-span-1">
           <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
@@ -691,13 +691,13 @@ function Footer({ t }: { t: (typeof content)["es"] }) {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-xs text-muted-foreground">{t.footer.location}</p>
         <div className="flex items-center gap-2">
-          <SocialLink href="#" label="GitHub">
+          <SocialLink href="https://github.com/mareanovazquez" label="GitHub">
             <Github className="size-4" />
           </SocialLink>
-          <SocialLink href="#" label="LinkedIn">
+          <SocialLink href="https://ar.linkedin.com/in/mareanovazquez" label="LinkedIn">
             <Linkedin className="size-4" />
           </SocialLink>
-          <SocialLink href="mailto:hola@tudominio.ar" label="Email">
+          <SocialLink href="mailto:marianodariovazquez@gmail.com" label="Email">
             <Mail className="size-4" />
           </SocialLink>
         </div>

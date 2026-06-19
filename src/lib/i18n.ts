@@ -68,14 +68,14 @@ export const content: Record<Lang, Dict> = {
       titleAccent: "productos",
       titleTail: "que importan.",
       lede: "Desarrollador web frontend especializado en React & Firebase. Diseño soluciones digitales que se sienten rápidos, claros y orientados a la comunicación.",
-      ctaPrimary: "Ver proyectos",
-      ctaSecondary: "Contactar",
+      ctaPrimary: "Proyectos",
+      ctaSecondary: "Escribime",
       available: "Disponible para proyectos freelance",
     },
     about: {
       kicker: "Sobre mí",
       title: "Comunicación aplicada al desarrollo de productos digitales.",
-      body: "Soy Doctor y Licenciado en Comunicación Social por la UNLP, con experiencia en medios gráficos, radiales y digitales. Ese recorrido me enseñó a leer mensajes, audiencias y contextos — habilidades que aplico directamente a cómo diseño y construyo productos web.",
+      body: "Soy doctor y licenciado en comunicación social por la UNLP, con experiencia en medios gráficos, radiales y digitales. Ese recorrido me enseñó a leer mensajes, audiencias y contextos — habilidades que aplico directamente a cómo diseño y construyo productos web.",
       body2:
         "Hoy me desempeño como docente de grado y posgrado en la FPyCS (UNLP), integro el equipo de soporte informático de la SCBA y lidero el desarrollo web en Estudio REC. Me muevo bien en equipos multidisciplinarios y me comprometo fuerte con cada proyecto que asumo.",
     },
@@ -90,11 +90,11 @@ export const content: Record<Lang, Dict> = {
       groups: [
         {
           label: "Frontend",
-          items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"],
+          items: ["React","TypeScript", "JavaScript", "HTML", "CSS", "Astro.js"],
         },
-        { label: "UI & estilos", items: ["Tailwind CSS", "Bootstrap", "Radix UI", "Canva"] },
+        { label: "UI & estilos", items: ["Tailwind CSS", "Bootstrap", "Radix UI"] },
         { label: "Estado & data", items: ["TanStack Query", "Zustand", "Firebase"] },
-        { label: "Tooling", items: ["Vite", "Git", "Figma"] },
+        { label: "Tooling", items: ["Vite", "Git", "Figma", "Canva", "Adobe" ] },
       ],
     },
     experience: {
@@ -103,31 +103,31 @@ export const content: Record<Lang, Dict> = {
       items: [
         {
           period: "2020 — Presente",
-          role: "Consultor en Comunicación Digital y Desarrollo Web",
+          role: "Consultor en comunicación digital y desarrollo web",
           company: "Estudio REC",
           desc: "Consultor externo para múltiples clientes: Estudio REC, Ratzkier Arquitectura, Épica Turismo, DANEZ y Jardín Hermano Sol. Desarrollo y mantenimiento de sus sitios web.",
         },
         {
           period: "2012 — Presente",
-          role: "Técnico en Soporte Informático / Frontend Developer",
-          company: "Suprema Corte de Buenos Aires",
+          role: "Área de soporte informático al usuario / Frontend Developer",
+          company: "Suprema Corte de Justicia de Buenos Aires",
           desc: "Capacitación y soporte a usuarios del sistema de presentaciones y notificaciones electrónicas. Desde 2021, desarrollo frontend en React para herramientas de gestión interna.",
         },
         {
           period: "2014 — 2022",
-          role: "Desarrollador Web y Editor",
+          role: "Desarrollador web y editor de contenidos",
           company: "La Cueva de Chauvet",
           desc: "Desarrollo y mantenimiento del sitio. Edición de artículos y producción de contenido para redes sociales.",
         },
         {
           period: "2014 — 2016",
-          role: "Community Manager",
-          company: "Syntagma Comunicación",
+          role: "Community manager",
+          company: "Syntagma comunicación",
           desc: "Planificación de campañas digitales para organizaciones políticas y estudiantiles. Consultoría en comunicación digital.",
         },
         {
           period: "2011 — 2016",
-          role: "Columnista de Tecnología",
+          role: "Columnista de tecnología",
           company: "Radio Estación Sur",
           desc: "Columna semanal sobre tecnología y producción de contenido digital para redes sociales.",
         },
@@ -194,7 +194,7 @@ export const content: Record<Lang, Dict> = {
       titleAccent: "products",
       titleTail: "that matter.",
       lede: "Frontend developer specialized in React & Firebase. I craft digital solutions that feel fast, clear, and built around communication.",
-      ctaPrimary: "See projects",
+      ctaPrimary: "Projects",
       ctaSecondary: "Get in touch",
       available: "Available for freelance projects",
     },
@@ -216,11 +216,11 @@ export const content: Record<Lang, Dict> = {
       groups: [
         {
           label: "Frontend",
-          items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"],
+          items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Astro.js"],
         },
-        { label: "UI & styles", items: ["Tailwind CSS", "Sass", "Radix UI", "Canva"] },
+        { label: "UI & styles", items: ["Tailwind CSS", "Sass", "Radix UI"] },
         { label: "State & data", items: ["TanStack Query", "Zustand", "Firebase"] },
-        { label: "Tooling", items: ["Vite", "Git", "Figma"] },
+        { label: "Tooling", items: ["Vite", "Git", "Figma", "Canva", "Adobe"] },
       ],
     },
     experience: {
