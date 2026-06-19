@@ -102,6 +102,12 @@ export const content: Record<Lang, Dict> = {
       title: "Trayectoria",
       items: [
         {
+          period: "2026 — Presente",
+          role: "Responsable de contenido y estrategia digital",
+          company: "China Editora & Evaristo Editorial",
+          desc: "Diseño y ejecución de la estrategia de comunicación digital y planes de marketing para lanzamientos editoriales y eventos de escala (Feria Internacional del Libro de Buenos Aires). Configuración y customización integral de tiendas en Tiendanube para optimizar UX y maximizar ventas directas. Producción de assets digitales (reels, carruseles, mockups) con flujos potenciados por IA para mejorar conversión y engagement.",
+        },
+        {
           period: "2020 — Presente",
           role: "Consultor en comunicación digital y desarrollo web",
           company: "Estudio REC",
@@ -239,6 +245,12 @@ export const content: Record<Lang, Dict> = {
       kicker: "Experience",
       title: "Track record",
       items: [
+        {
+          period: "2026 — Present",
+          role: "Digital Content & Strategy Manager",
+          company: "China Editora & Evaristo Editorial",
+          desc: "Design and execution of digital communication strategies and marketing plans for key editorial launches and large-scale events (Buenos Aires International Book Fair). Full setup and customization of Tiendanube e-commerce stores to optimize UX and maximize direct sales. Production of digital assets (reels, carousels, mockups) with AI-enhanced workflows to boost conversion and engagement.",
+        },
         {
           period: "2020 — Present",
           role: "Digital Communication Consultant & Web Developer",
