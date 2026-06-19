@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 
 import { content, type Lang } from "@/lib/i18n";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { useActiveSection, useRevealOnScroll } from "@/hooks/use-reveal";
 
 import projectRec from "@/assets/project-rec.jpg";
@@ -155,6 +156,7 @@ function Landing() {
       </main>
       <Contact t={t} />
       <Footer t={t} />
+      <WhatsAppButton lang={lang} />
     </div>
   );
 }
@@ -702,7 +704,7 @@ function Footer({ t }: { t: (typeof content)["es"] }) {
           </SocialLink>
         </div>
         <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-          {t.footer.rights}
+          © 2026 · {t.footer.rights}
         </p>
       </div>
     </footer>
