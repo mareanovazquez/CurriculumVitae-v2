@@ -46,6 +46,7 @@ type Dict = {
     submitBtn: string;
     successMsg: string;
     sendingBtn: string;
+    errorMsg: string;
   };
   footer: { location: string; rights: string };
 };
@@ -153,6 +154,7 @@ export const content: Record<Lang, Dict> = {
       submitBtn: "Enviar mensaje",
       successMsg: "¡Mensaje enviado con éxito!",
       sendingBtn: "Enviando...",
+      errorMsg: "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.",
     },
     footer: {
       location: "Buenos Aires, Argentina",
@@ -253,6 +255,7 @@ export const content: Record<Lang, Dict> = {
       submitBtn: "Send message",
       successMsg: "Message sent successfully!",
       sendingBtn: "Sending...",
+      errorMsg: "An error occurred while sending the message. Please try again.",
     },
     footer: {
       location: "Buenos Aires, Argentina",

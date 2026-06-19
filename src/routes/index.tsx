@@ -27,7 +27,7 @@ import projectCarta from "@/assets/project-carta.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Frontend Developer · Portfolio" },
+      { title: "Mariano Vazquez" },
       {
         name: "description",
         content:
@@ -538,15 +538,33 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "success">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
     setStatus("sending");
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    }, 1500);
+    try {
+      const response = await fetch("https://formspree.io/f/xpwavzva", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert(t.contact.errorMsg);
+        setStatus("idle");
+      }
+    } catch (error) {
+      console.error("Error sending form to Formspree:", error);
+      alert(t.contact.errorMsg);
+      setStatus("idle");
+    }
   };
 
   return (
@@ -555,7 +573,7 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
       className="relative mt-12 overflow-hidden border-t border-border bg-surface/20 px-4 py-16 sm:px-6 sm:py-24 lg:px-10"
     >
       <div className="absolute inset-x-0 top-0 mx-auto h-64 max-w-3xl bg-primary/10 blur-3xl" />
-      
+
       <div className="relative z-10 mx-auto w-full max-w-6xl reveal-on-view">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Left Column: Info */}
@@ -567,14 +585,14 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
             <p className="mt-4 max-w-xl text-base text-muted-foreground leading-relaxed">
               {t.contact.lede}
             </p>
-            
+
             <div className="mt-8 flex flex-col gap-4">
               <a
-                href="mailto:hola@tudominio.ar"
+                href="mailto:marianodariovazquez@gmail.com"
                 className="group flex w-fit items-center gap-3 rounded-full border border-border bg-surface/60 px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:bg-surface"
               >
                 <Mail className="size-4 text-primary transition-transform group-hover:scale-110" />
-                <span>hola@tudominio.ar</span>
+                <span>marianodariovazquez@gmail.com</span>
               </a>
             </div>
           </div>
@@ -586,9 +604,7 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
                 <div className="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary">
                   <Sparkles className="size-6 animate-pulse" />
                 </div>
-                <h3 className="mt-4 font-heading text-xl font-bold">
-                  {t.contact.successMsg}
-                </h3>
+                <h3 className="mt-4 font-heading text-xl font-bold">{t.contact.successMsg}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Gracias por tu mensaje. Te responderé a la brevedad.
                 </p>
@@ -602,7 +618,10 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5">
+                  <label
+                    htmlFor="name"
+                    className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5"
+                  >
                     {t.contact.nameLabel}
                   </label>
                   <input
@@ -616,7 +635,10 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5">
+                  <label
+                    htmlFor="email"
+                    className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5"
+                  >
                     {t.contact.emailLabel}
                   </label>
                   <input
@@ -630,7 +652,10 @@ function Contact({ t }: { t: (typeof content)["es"] }) {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5">
+                  <label
+                    htmlFor="message"
+                    className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5"
+                  >
                     {t.contact.messageLabel}
                   </label>
                   <textarea
