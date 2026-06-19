@@ -67,7 +67,7 @@ export const content: Record<Lang, Dict> = {
       title: "Construyo",
       titleAccent: "productos",
       titleTail: "que importan.",
-      lede: "Desarrollador web frontend especializado en React & Firebase. Diseño soluciones digitales que se sienten rápidos, claros y orientados a la comunicación.",
+      lede: "Desarrollador web frontend especializado en React & Firebase. Diseño soluciones digitales que se sienten rápidas, claras y orientadas a la comunicación.",
       ctaPrimary: "Proyectos",
       ctaSecondary: "Escribime",
       available: "Disponible para proyectos freelance",
@@ -90,11 +90,11 @@ export const content: Record<Lang, Dict> = {
       groups: [
         {
           label: "Frontend",
-          items: ["React","TypeScript", "JavaScript", "HTML", "CSS", "Astro.js"],
+          items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Astro.js"],
         },
         { label: "UI & estilos", items: ["Tailwind CSS", "Bootstrap", "Radix UI"] },
         { label: "Estado & data", items: ["TanStack Query", "Zustand", "Firebase"] },
-        { label: "Tooling", items: ["Vite", "Git", "Figma", "Canva", "Adobe" ] },
+        { label: "Tooling", items: ["Vite", "Git", "Figma", "Canva", "Adobe"] },
       ],
     },
     experience: {
@@ -150,9 +150,21 @@ export const content: Record<Lang, Dict> = {
       title: "Aprendizaje continuo.",
       items: [
         { period: "2011-2018", title: "Doctorado en Comunicación Social", school: "FPyCS — UNLP" },
-        { period: "2003 — 2011", title: "Licenciatura en Comunicación Social con orientación en Periodismo", school: "FPyCS — UNLP" },
-        { period: "2018 — 2023", title: "Desarrollo Web · JavaScript · React · Diseño UX-UI", school: "CoderHouse" },
-        { period: "2022 — 2024", title: "Web Designer · Profesional Developer · Front End Developer", school: "Digital House" },
+        {
+          period: "2003 — 2011",
+          title: "Licenciatura en Comunicación Social con orientación en Periodismo",
+          school: "FPyCS — UNLP",
+        },
+        {
+          period: "2018 — 2023",
+          title: "Desarrollo Web · JavaScript · React · Diseño UX-UI",
+          school: "CoderHouse",
+        },
+        {
+          period: "2022 — 2024",
+          title: "Web Designer · Profesional Developer · Front End Developer",
+          school: "Digital House",
+        },
       ],
     },
     teaching: {
@@ -276,15 +288,27 @@ export const content: Record<Lang, Dict> = {
       title: "Continuous learning.",
       items: [
         { period: "2011 — 2018", title: "PhD in Social Communication", school: "FPyCS — UNLP" },
-        { period: "2003 — 2011", title: "Bachelor's Degree in Social Communication — Journalism", school: "FPyCS — UNLP" },
-        { period: "2018 — 2023", title: "Web Development · JavaScript · React · UX-UI Design", school: "CoderHouse" },
-        { period: "2022 — 2024", title: "Web Designer · Professional Developer · Front End Developer", school: "Digital House" },
+        {
+          period: "2003 — 2011",
+          title: "Bachelor's Degree in Social Communication — Journalism",
+          school: "FPyCS — UNLP",
+        },
+        {
+          period: "2018 — 2023",
+          title: "Web Development · JavaScript · React · UX-UI Design",
+          school: "CoderHouse",
+        },
+        {
+          period: "2022 — 2024",
+          title: "Web Designer · Professional Developer · Front End Developer",
+          school: "Digital House",
+        },
       ],
     },
     teaching: {
       kicker: "Teaching",
       title: "University lecturer since 2012.",
-      body: "I teach undergraduate and postgraduate courses at FPyCS (UNLP): Digital Journalism and New Media, Introduction to Programming Languages, and the postgraduate seminar \"Living in Networks\". I have also taught at the Instituto Superior en Registración y Publicidad Inmobiliaria and Universidad del Este.",
+      body: 'I teach undergraduate and postgraduate courses at FPyCS (UNLP): Digital Journalism and New Media, Introduction to Programming Languages, and the postgraduate seminar "Living in Networks". I have also taught at the Instituto Superior en Registración y Publicidad Inmobiliaria and Universidad del Este.',
     },
     contact: {
       kicker: "Contact",
