@@ -323,7 +323,7 @@ function About({ t }: { t: (typeof content)["es"] }) {
             <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
               {t.stats.stack}
             </p>
-            <p className="truncate text-sm font-medium">React · TypeScript · Tailwind</p>
+            <p className="truncate text-sm font-medium">React · TypeScript · Tailwind · Firebase</p>
           </div>
         </div>
       </div>
