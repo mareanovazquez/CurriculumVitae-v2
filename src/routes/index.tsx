@@ -33,11 +33,11 @@ export const Route = createFileRoute("/")({
         content:
           "Mi nombre es Mariano Vazquez, periodista, comunicador digital y desarrollador frontend.",
       },
-      { property: "og:title", content: "Frontend Developer · Portfolio" },
+      { property: "og:title", content: "Frontend Developer · comunicador digital" },
       {
         property: "og:description",
         content:
-          "Portfolio de un desarrollador frontend de Argentina especializado en React, TypeScript y diseño de interfaces.",
+          "Mi nombre es Mariano Vazquez, periodista, comunicador digital y desarrollador frontend.",
       },
     ],
   }),
