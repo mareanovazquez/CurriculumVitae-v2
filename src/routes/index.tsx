@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio de un desarrollador frontend de Argentina especializado en React, TypeScript y diseño de interfaces.",
+          "Mi nombre es Mariano Vazquez, periodista, comunicador digital y desarrollador frontend.",
       },
       { property: "og:title", content: "Frontend Developer · Portfolio" },
       {
@@ -447,7 +447,7 @@ function Portfolio({ t, lang }: { t: (typeof content)["es"]; lang: Lang }) {
                 width={800}
                 height={600}
                 loading="lazy"
-                className="size-full object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                className="portfolio-img size-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-90 transition-opacity group-hover:opacity-60" />
               <span className="absolute left-3 top-3 rounded-full border border-border bg-background/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground backdrop-blur">

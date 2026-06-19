@@ -126,6 +126,13 @@
   .bg-app-gradient {
     background-image: var(--bg-gradient);
   }
+
+  @media (hover: hover) and (pointer: fine) {
+    .portfolio-img {
+      --tw-grayscale: grayscale(100%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+  }
 }
 
 @keyframes reveal {
