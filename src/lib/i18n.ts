@@ -92,9 +92,9 @@ export const content: Record<Lang, Dict> = {
           label: "Frontend",
           items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"],
         },
-        { label: "UI & estilos", items: ["Tailwind CSS", "Sass", "Radix UI", "Framer Motion"] },
-        { label: "Estado & data", items: ["TanStack Query", "Zustand", "REST", "Supabase"] },
-        { label: "Tooling", items: ["Vite", "Git", "Figma", "Vitest"] },
+        { label: "UI & estilos", items: ["Tailwind CSS", "Bootstrap", "Radix UI", "Canva"] },
+        { label: "Estado & data", items: ["TanStack Query", "Zustand", "Firebase"] },
+        { label: "Tooling", items: ["Vite", "Git", "Figma"] },
       ],
     },
     experience: {
@@ -147,25 +147,18 @@ export const content: Record<Lang, Dict> = {
     },
     education: {
       kicker: "Formación",
-      title: "Aprendizaje continuo",
+      title: "Aprendizaje continuo.",
       items: [
-        {
-          period: "2020 — 2023",
-          title: "Tecnicatura en Desarrollo Web",
-          school: "Formación universitaria",
-        },
-        {
-          period: "2022",
-          title: "React avanzado & ecosistema moderno",
-          school: "Coursera / Platzi",
-        },
-        { period: "2021", title: "UI Design Fundamentals", school: "Bootcamp" },
+        { period: "2011-2018", title: "Doctorado en Comunicación Social", school: "FPyCS — UNLP" },
+        { period: "2003 — 2011", title: "Licenciatura en Comunicación Social con orientación en Periodismo", school: "FPyCS — UNLP" },
+        { period: "2018 — 2023", title: "Desarrollo Web · JavaScript · React · Diseño UX-UI", school: "CoderHouse" },
+        { period: "2022 — 2024", title: "Web Designer · Profesional Developer · Front End Developer", school: "Digital House" },
       ],
     },
     teaching: {
       kicker: "Docencia",
       title: "Docente universitario desde 2012.",
-      body: "Dicto cátedras de grado y posgrado en la FPyCS (UNLP): Taller de Tecnologías, Periodismo Digital y Nuevos Medios, Introducción a los Lenguajes de Programación y el Seminario de posgrado «Vivir en las redes». También ejercí la docencia en el Instituto Superior en Registración y Publicidad Inmobiliaria y en la Universidad del Este.",
+      body: "Docente de grado y posgrado en la FPyCS (UNLP) en las cátedras de Periodismo digital y nuevos medios, Introducción a los lenguajes de programación y el Seminario de posgrado «Vivir en las redes». También ejercí la docencia en el Instituto Superior en Registración y Publicidad Inmobiliaria y en la Universidad del Este.",
     },
     contact: {
       kicker: "Contacto",
@@ -225,9 +218,9 @@ export const content: Record<Lang, Dict> = {
           label: "Frontend",
           items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"],
         },
-        { label: "UI & styles", items: ["Tailwind CSS", "Sass", "Radix UI", "Framer Motion"] },
-        { label: "State & data", items: ["TanStack Query", "Zustand", "REST", "Supabase"] },
-        { label: "Tooling", items: ["Vite", "Git", "Figma", "Vitest"] },
+        { label: "UI & styles", items: ["Tailwind CSS", "Sass", "Radix UI", "Canva"] },
+        { label: "State & data", items: ["TanStack Query", "Zustand", "Firebase"] },
+        { label: "Tooling", items: ["Vite", "Git", "Figma"] },
       ],
     },
     experience: {
@@ -280,17 +273,18 @@ export const content: Record<Lang, Dict> = {
     },
     education: {
       kicker: "Education",
-      title: "Always learning",
+      title: "Continuous learning.",
       items: [
-        { period: "2020 — 2023", title: "Web Development Degree", school: "University training" },
-        { period: "2022", title: "Advanced React & modern ecosystem", school: "Coursera / Platzi" },
-        { period: "2021", title: "UI Design Fundamentals", school: "Bootcamp" },
+        { period: "2011 — 2018", title: "PhD in Social Communication", school: "FPyCS — UNLP" },
+        { period: "2003 — 2011", title: "Bachelor's Degree in Social Communication — Journalism", school: "FPyCS — UNLP" },
+        { period: "2018 — 2023", title: "Web Development · JavaScript · React · UX-UI Design", school: "CoderHouse" },
+        { period: "2022 — 2024", title: "Web Designer · Professional Developer · Front End Developer", school: "Digital House" },
       ],
     },
     teaching: {
       kicker: "Teaching",
       title: "University lecturer since 2012.",
-      body: "I teach undergraduate and postgraduate courses at FPyCS (UNLP): Technology Workshop, Digital Journalism and New Media, Introduction to Programming Languages, and the postgraduate seminar \"Living in Networks\". I have also taught at the Instituto Superior en Registración y Publicidad Inmobiliaria and Universidad del Este.",
+      body: "I teach undergraduate and postgraduate courses at FPyCS (UNLP): Digital Journalism and New Media, Introduction to Programming Languages, and the postgraduate seminar \"Living in Networks\". I have also taught at the Instituto Superior en Registración y Publicidad Inmobiliaria and Universidad del Este.",
     },
     contact: {
       kicker: "Contact",
