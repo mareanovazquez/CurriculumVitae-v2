@@ -105,7 +105,7 @@ export const content: Record<Lang, Dict> = {
           period: "2026 — Presente",
           role: "Responsable de contenido y estrategia digital",
           company: "China Editora & Evaristo Editorial",
-          desc: "Diseño y ejecución de la estrategia de comunicación digital y planes de marketing para lanzamientos editoriales y eventos de escala (Feria Internacional del Libro de Buenos Aires). Configuración y customización integral de tiendas en Tiendanube para optimizar UX y maximizar ventas directas. Producción de assets digitales (reels, carruseles, mockups) con flujos potenciados por IA para mejorar conversión y engagement.",
+          desc: "Diseño y ejecución de la estrategia de comunicación digital para lanzamientos editoriales y eventos de escala (Feria Internacional del Libro de Buenos Aires). Configuración y customización integral de tiendas en Tiendanube para optimizar UX y maximizar ventas directas. Producción de assets digitales (reels, carruseles, mockups) con flujos potenciados por IA para mejorar conversión y engagement.",
         },
         {
           period: "2020 — Presente",
