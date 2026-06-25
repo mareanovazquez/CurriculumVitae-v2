@@ -4,6 +4,8 @@ import projectEpica from "@/assets/project-epica.jpg";
 import projectDanez from "@/assets/project-danez.jpg";
 import projectJardin from "@/assets/project-jardin.jpg";
 import projectCarta from "@/assets/project-carta.jpg";
+import projectTabata from "@/assets/project-tabata.png";
+import projectTinta from "@/assets/project-tinta.png";
 
 export const projects = [
   {
@@ -77,5 +79,29 @@ export const projects = [
       en: "Platform for digitizing and managing menus for food businesses. Simple digital menus that eliminate the need for reprints.",
     },
     category: { es: "Producto SaaS", en: "SaaS product" },
+  },
+  {
+    key: "tabata",
+    name: "Tabata Timer",
+    image: projectTabata,
+    tags: ["React", "Firebase"],
+    href: "https://tabata-timer-blue.web.app/",
+    desc: {
+      es: "Temporizador para entrenamientos Tabata y circuitos de alta intensidad. Desarrollada en React y hosteada en Firebase Hosting para usarse desde cualquier dispositivo.",
+      en: "Timer for Tabata workouts and high-intensity circuits. Built with React and hosted on Firebase Hosting for quick access from any device.",
+    },
+    category: { es: "Herramienta web", en: "Web tool" },
+  },
+  {
+    key: "tinta",
+    name: "Tinta & Raíces",
+    image: projectTinta,
+    tags: ["Astro.js"],
+    href: "http://tintayraices.ar/",
+    desc: {
+      es: "Proyecto editorial que recupera historias familiares y les da forma escrita. Construido con Astro.js para una experiencia de lectura clara, rápida y centrada en el contenido.",
+      en: "Editorial project that recovers family stories and gives them written form. Built with Astro.js for a clear, fast, content-focused reading experience.",
+    },
+    category: { es: "Editorial", en: "Publishing" },
   },
 ];

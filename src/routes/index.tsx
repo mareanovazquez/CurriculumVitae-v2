@@ -359,6 +359,8 @@ function Portfolio({ t, lang }: { t: (typeof content)["es"]; lang: Lang }) {
           <a
             key={p.key}
             href={p.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-surface/40 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10"
           >
             <div className="relative aspect-[4/3] overflow-hidden bg-background">
