@@ -112,7 +112,7 @@ const PROJECTS = [
     key: "carta",
     name: "Carta Online",
     image: projectCarta,
-    tags: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
+    tags: ["Astro.js", "React", "Firebase", "TypeScript"],
     href: "https://cartaonline.com.ar",
     desc: {
       es: "Plataforma para digitalizar y administrar menús de negocios gastronómicos. Cartas digitales simples que eliminan la necesidad de reimpresiones.",
