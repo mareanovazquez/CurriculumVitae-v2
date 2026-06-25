@@ -236,7 +236,7 @@ export const content: Record<Lang, Dict> = {
           label: "Frontend",
           items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Astro.js"],
         },
-        { label: "UI & styles", items: ["Tailwind CSS", "Sass", "Radix UI"] },
+        { label: "UI & styles", items: ["Tailwind CSS", "Bootstrap", "Radix UI"] },
         { label: "State & data", items: ["TanStack Query", "Zustand", "Firebase"] },
         { label: "Tooling", items: ["Vite", "Git", "Figma", "Canva", "Adobe"] },
       ],
