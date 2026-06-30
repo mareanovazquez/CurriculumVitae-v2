@@ -188,22 +188,25 @@ export const content: Record<Lang, Dict> = {
       title: "Lo que dicen quienes trabajaron conmigo.",
       items: [
         {
-          quote: "Mariano transformó nuestra presencia online. El sitio quedó exactamente como lo imaginábamos: prolijo, rápido y fácil de actualizar.",
-          name: "Equipo DANEZ",
+          quote:
+            "Mariano transformó nuestra presencia online. El sitio quedó exactamente como lo imaginábamos: prolijo, rápido y fácil de actualizar.",
+          name: "Ezequiel Cabrera",
           role: "Cliente",
           company: "DANEZ",
         },
         {
-          quote: "Nos entendió desde el primer momento. Entregó el sitio en tiempo y forma, con un diseño que realmente representa lo que somos.",
-          name: "Jardín Hermano Sol",
+          quote:
+            "Nos entendió desde el primer momento. Entregó el sitio en tiempo y forma, con un diseño que realmente representa lo que somos.",
+          name: "Graciela Berisso",
           role: "Cliente",
           company: "Jardín Hermano Sol",
         },
         {
-          quote: "Muy profesional y atento. El resultado superó nuestras expectativas y el proceso fue muy ordenado de principio a fin.",
-          name: "Épica Servicios Turísticos",
+          quote:
+            "Muy profesional y atento. El resultado superó nuestras expectativas y el proceso fue muy ordenado de principio a fin.",
+          name: "Cristian Escudero",
           role: "Cliente",
-          company: "Épica Turismo",
+          company: "Épica Servicios Turísticos",
         },
       ],
     },
@@ -356,19 +359,22 @@ export const content: Record<Lang, Dict> = {
       title: "What people say about working with me.",
       items: [
         {
-          quote: "Mariano transformed our online presence. The site turned out exactly as we envisioned: clean, fast, and easy to update.",
+          quote:
+            "Mariano transformed our online presence. The site turned out exactly as we envisioned: clean, fast, and easy to update.",
           name: "DANEZ Team",
           role: "Client",
           company: "DANEZ",
         },
         {
-          quote: "He understood us from day one. The site was delivered on time, with a design that truly represents who we are.",
+          quote:
+            "He understood us from day one. The site was delivered on time, with a design that truly represents who we are.",
           name: "Jardín Hermano Sol",
           role: "Client",
           company: "Jardín Hermano Sol",
         },
         {
-          quote: "Very professional and attentive. The result exceeded our expectations and the whole process was well-organized from start to finish.",
+          quote:
+            "Very professional and attentive. The result exceeded our expectations and the whole process was well-organized from start to finish.",
           name: "Épica Servicios Turísticos",
           role: "Client",
           company: "Épica Turismo",
