@@ -12,6 +12,7 @@ import {
   Palette,
   Wrench,
   Database,
+  Quote,
 } from "lucide-react";
 
 import { content, type Lang } from "@/lib/i18n";
@@ -71,6 +72,7 @@ function Landing() {
           <Portfolio t={t} lang={lang} />
           <Education t={t} />
           <Teaching t={t} />
+          <Testimonials t={t} lang={lang} />
         </div>
       </main>
       <Contact t={t} />
@@ -450,6 +452,32 @@ function Teaching({ t }: { t: (typeof content)["es"] }) {
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           {t.teaching.body}
         </p>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------- Testimonials -------------------- */
+
+function Testimonials({ t }: { t: (typeof content)["es"]; lang: Lang }) {
+  return (
+    <section id="testimonios" className="reveal-on-view">
+      <SectionHead kicker={t.testimonials.kicker} title={t.testimonials.title} />
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {t.testimonials.items.map((item, i) => (
+          <div
+            key={i}
+            className="flex flex-col rounded-xl border border-border bg-muted/40 p-6"
+          >
+            <Quote className="size-6 text-primary" />
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-foreground/80">{item.quote}</p>
+            <hr className="my-4 border-border" />
+            <div>
+              <p className="font-bold text-sm">{item.name}</p>
+              <p className="text-sm text-muted-foreground">{item.company}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
