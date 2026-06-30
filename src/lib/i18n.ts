@@ -13,7 +13,6 @@ type Dict = {
   hero: {
     role: string;
     title: string;
-    titleAccent: string;
     titleTail: string;
     lede: string;
     ctaPrimary: string;
@@ -28,7 +27,7 @@ type Dict = {
     title: string;
     items: { period: string; role: string; company: string; desc: string }[];
   };
-  portfolio: { kicker: string; title: string; subtitle: string; viewSite: string };
+  portfolio: { kicker: string; title: string; viewSite: string };
   education: {
     kicker: string;
     title: string;
@@ -53,7 +52,7 @@ type Dict = {
     sendingBtn: string;
     errorMsg: string;
   };
-  footer: { location: string; rights: string };
+  footer: { location: string; rightsPre: string; rightsPost: string };
 };
 
 export const content: Record<Lang, Dict> = {
@@ -68,11 +67,10 @@ export const content: Record<Lang, Dict> = {
       contact: "Contacto",
     },
     hero: {
-      role: "Frontend Developer · Argentina",
-      title: "Construyo",
-      titleAccent: "productos",
-      titleTail: "que importan.",
-      lede: "Desarrollador web frontend especializado en React & Firebase. Diseño soluciones digitales que se sienten rápidas, claras y orientadas a la comunicación.",
+      role: "frontend developer · comunicador ",
+      title: "Trabajo para que las ideas",
+      titleTail: "comuniquen",
+      lede: "Desarrollador web frontend especializado en React & Firebase. Diseño soluciones digitales que se sienten rápidas y simples. La comunicación está en el centro de mi trabajo.",
       ctaPrimary: "Proyectos",
       ctaSecondary: "Escribime",
       available: "Disponible para proyectos freelance",
@@ -153,7 +151,6 @@ export const content: Record<Lang, Dict> = {
     portfolio: {
       kicker: "Portfolio",
       title: "Proyectos destacados",
-      subtitle: "Una selección de trabajos recientes para clientes reales.",
       viewSite: "Visitar sitio",
     },
     education: {
@@ -189,7 +186,7 @@ export const content: Record<Lang, Dict> = {
       items: [
         {
           quote:
-            "Mariano transformó nuestra presencia online. El sitio quedó exactamente como lo imaginábamos: prolijo, rápido y fácil de actualizar.",
+            "Mariano logró interpretar exactamente lo que queríamos transmitir con nuestra marca. Siempre estuvo atento a cada detalle, resolviendo todo con rapidez y profesionalismo. Fue un placer trabajar con él y lo recomendamos totalmente a quienes busquen un diseñador comprometido, creativo y confiable.",
           name: "Ezequiel Cabrera",
           role: "Cliente",
           company: "DANEZ",
@@ -204,16 +201,16 @@ export const content: Record<Lang, Dict> = {
         {
           quote:
             "Muy profesional y atento. El resultado superó nuestras expectativas y el proceso fue muy ordenado de principio a fin.",
-          name: "Cristian Escudero",
+          name: "Laura Efrón",
           role: "Cliente",
-          company: "Épica Servicios Turísticos",
+          company: "Tinta & Raíces",
         },
       ],
     },
     contact: {
       kicker: "Contacto",
       title: "¿Trabajamos juntos?",
-      lede: "Si tenés un proyecto en mente o querés sumar un dev a tu equipo, escribime. Respondo en menos de 24hs.",
+      lede: "Si tenés un proyecto en mente o querés sumar un dev a tu equipo, escribime.",
       cta: "Enviar un email",
       nameLabel: "Nombre",
       emailLabel: "Email",
@@ -225,7 +222,8 @@ export const content: Record<Lang, Dict> = {
     },
     footer: {
       location: "Buenos Aires, Argentina",
-      rights: "Hecho con café en Argentina",
+      rightsPre: "Hecho con",
+      rightsPost: "en Argentina",
     },
   },
   en: {
@@ -239,11 +237,10 @@ export const content: Record<Lang, Dict> = {
       contact: "Contact",
     },
     hero: {
-      role: "Frontend Developer · Argentina",
-      title: "I build",
-      titleAccent: "products",
-      titleTail: "that matter.",
-      lede: "Frontend developer specialized in React & Firebase. I craft digital solutions that feel fast, clear, and built around communication.",
+      role: "frontend developer · communicator",
+      title: "I work to make ideas",
+      titleTail: "communicate.",
+      lede: "Frontend developer specialized in React & Firebase. I design digital solutions that feel fast and simple. Communication is at the center of my work.",
       ctaPrimary: "Projects",
       ctaSecondary: "Get in touch",
       available: "Available for freelance projects",
@@ -324,7 +321,6 @@ export const content: Record<Lang, Dict> = {
     portfolio: {
       kicker: "Portfolio",
       title: "Selected work",
-      subtitle: "A handful of recent projects shipped for real clients.",
       viewSite: "Visit site",
     },
     education: {
@@ -360,31 +356,31 @@ export const content: Record<Lang, Dict> = {
       items: [
         {
           quote:
-            "Mariano transformed our online presence. The site turned out exactly as we envisioned: clean, fast, and easy to update.",
-          name: "DANEZ Team",
+            "Mariano captured exactly what we wanted to convey with our brand. He was always attentive to every detail, handling everything quickly and professionally. It was a pleasure working with him, and we wholeheartedly recommend him to anyone looking for a committed, creative, and reliable developer.",
+          name: "Ezequiel Cabrera",
           role: "Client",
           company: "DANEZ",
         },
         {
           quote:
             "He understood us from day one. The site was delivered on time, with a design that truly represents who we are.",
-          name: "Jardín Hermano Sol",
+          name: "Graciela Berisso",
           role: "Client",
           company: "Jardín Hermano Sol",
         },
         {
           quote:
             "Very professional and attentive. The result exceeded our expectations and the whole process was well-organized from start to finish.",
-          name: "Épica Servicios Turísticos",
+          name: "Laura Efrón",
           role: "Client",
-          company: "Épica Turismo",
+          company: "Tinta & Raíces",
         },
       ],
     },
     contact: {
       kicker: "Contact",
       title: "Let's work together.",
-      lede: "If you have a project in mind or you're looking for a dev to join your team, drop me a line. I reply within 48 hours.",
+      lede: "If you have a project in mind or you're looking for a dev to join your team, drop me a line.",
       cta: "Send an email",
       nameLabel: "Name",
       emailLabel: "Email",
@@ -396,7 +392,8 @@ export const content: Record<Lang, Dict> = {
     },
     footer: {
       location: "Buenos Aires, Argentina",
-      rights: "Built with coffee in Argentina",
+      rightsPre: "Built with",
+      rightsPost: "in Argentina",
     },
   },
 };

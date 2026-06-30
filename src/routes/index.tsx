@@ -13,6 +13,7 @@ import {
   Wrench,
   Database,
   Quote,
+  Glasses,
 } from "lucide-react";
 
 import { content, type Lang } from "@/lib/i18n";
@@ -184,8 +185,7 @@ function Hero({ t }: { t: (typeof content)["es"] }) {
         </span>
 
         <h1 className="font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-balance sm:text-6xl lg:text-7xl">
-          {t.hero.title} <span className="text-primary">{t.hero.titleAccent}</span>{" "}
-          {t.hero.titleTail}
+          {t.hero.title} {t.hero.titleTail}
         </h1>
 
         <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -647,7 +647,7 @@ function Footer({ t }: { t: (typeof content)["es"] }) {
           </SocialLink>
         </div>
         <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-          © 2026 · {t.footer.rights}
+          © 2026 · {t.footer.rightsPre} <Glasses className="inline size-3" /> {t.footer.rightsPost}
         </p>
       </div>
     </footer>
@@ -678,8 +678,7 @@ function SocialLink({
 
 function Kicker({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.25em] text-primary">
-      <span className="h-px w-6 bg-primary/40" />
+    <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.25em] text-primary">
       {children}
     </span>
   );
