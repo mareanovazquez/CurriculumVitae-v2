@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
+
+const HeroParticles = lazy(() => import("@/components/HeroParticles"));
 import {
   ArrowRight,
   ArrowUpRight,
@@ -172,6 +174,9 @@ function Hero({ t }: { t: (typeof content)["es"] }) {
       id="sobre"
       className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-b from-surface to-background p-6 reveal sm:p-10 lg:p-14"
     >
+      <Suspense fallback={null}>
+        <HeroParticles />
+      </Suspense>
       <div className="absolute -right-20 -top-20 size-72 rounded-full bg-primary/15 blur-3xl" />
       <div className="absolute -bottom-32 -left-24 size-72 rounded-full bg-primary-dark/10 blur-3xl" />
 
@@ -347,9 +352,7 @@ function Portfolio({ t, lang }: { t: (typeof content)["es"]; lang: Lang }) {
           <h2 className="mt-3 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
             {t.portfolio.title}
           </h2>
-          <p className="mt-2 max-w-xl text-sm text-muted-foreground sm:text-base">
-            {t.portfolio.subtitle}
-          </p>
+
         </div>
       </div>
 
