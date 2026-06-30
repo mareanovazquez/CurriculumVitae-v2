@@ -351,9 +351,6 @@ function Portfolio({ t, lang }: { t: (typeof content)["es"]; lang: Lang }) {
             {t.portfolio.subtitle}
           </p>
         </div>
-        <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-          {String(projects.length).padStart(2, "0")} · {lang === "es" ? "proyectos" : "projects"}
-        </span>
       </div>
 
       <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -465,10 +462,7 @@ function Testimonials({ t }: { t: (typeof content)["es"]; lang: Lang }) {
       <SectionHead kicker={t.testimonials.kicker} title={t.testimonials.title} />
       <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {t.testimonials.items.map((item, i) => (
-          <div
-            key={i}
-            className="flex flex-col rounded-xl border border-border bg-muted/40 p-6"
-          >
+          <div key={i} className="flex flex-col rounded-xl border border-border bg-muted/40 p-6">
             <Quote className="size-6 text-primary" />
             <p className="mt-2 flex-1 text-sm leading-relaxed text-foreground/80">{item.quote}</p>
             <hr className="my-4 border-border" />
