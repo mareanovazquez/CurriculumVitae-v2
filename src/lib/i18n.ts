@@ -200,7 +200,7 @@ export const content: Record<Lang, Dict> = {
         },
         {
           quote:
-            "Muy profesional y atento. El resultado superó nuestras expectativas y el proceso fue muy ordenado de principio a fin.",
+            "Mariano es muy profesional, atento y buena onda. Me está acompañando en proceso de desarrollar el sitio para mi marca. Todo fluye sin contratiempos y con facilidad.",
           name: "Laura Efrón",
           role: "Cliente",
           company: "Tinta & Raíces",
@@ -370,7 +370,7 @@ export const content: Record<Lang, Dict> = {
         },
         {
           quote:
-            "Very professional and attentive. The result exceeded our expectations and the whole process was well-organized from start to finish.",
+            "Mariano is very professional, attentive, and has a great attitude. He's been supporting me through the process of developing the website for my brand. Everything flows smoothly and without any hiccups.",
           name: "Laura Efrón",
           role: "Client",
           company: "Tinta & Raíces",
